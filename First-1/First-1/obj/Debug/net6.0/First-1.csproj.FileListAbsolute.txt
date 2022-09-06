@@ -1,0 +1,15 @@
+C:\Users\Octavian\source\repos\First-1\First-1\bin\Debug\net6.0\First-1.exe
+C:\Users\Octavian\source\repos\First-1\First-1\bin\Debug\net6.0\First-1.deps.json
+C:\Users\Octavian\source\repos\First-1\First-1\bin\Debug\net6.0\First-1.runtimeconfig.json
+C:\Users\Octavian\source\repos\First-1\First-1\bin\Debug\net6.0\First-1.dll
+C:\Users\Octavian\source\repos\First-1\First-1\bin\Debug\net6.0\First-1.pdb
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.csproj.AssemblyReference.cache
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.AssemblyInfoInputs.cache
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.AssemblyInfo.cs
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.csproj.CoreCompileInputs.cache
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.dll
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\refint\First-1.dll
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.pdb
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\First-1.genruntimeconfig.cache
+C:\Users\Octavian\source\repos\First-1\First-1\obj\Debug\net6.0\ref\First-1.dll

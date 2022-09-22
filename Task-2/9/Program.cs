@@ -1,98 +1,30 @@
-﻿int n = -1;
-bool is_error = true;
+﻿using GlobalUtils;
+using LocalUtils;
 
-bool is_repeat(int i, int number, int[] numbers)
-{
-    for (int j = 0; j < i; j++)
-    {
-        if (numbers[j] == number)
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-void arr_fill(int[] numbers)
-{
-    for (int i = 0; i < n; i++)
-    {
-        int element = 0;
-        while (true)
-        {
-            Console.Write($"Введите элемент [{i}]: ");
-            if (!int.TryParse(Console.ReadLine(), out element))
-            {
-                Console.WriteLine("На вход принимаются только int значения и значения не больше чем " + int.MaxValue);
-                continue;
-            }
-            else if (is_repeat(i, element, numbers))
-            {
-                Console.Write("Замечено повторение\n");
-                continue;
-            }
-            numbers[i] = element;
-            break;
-        }
-    }
-}
-
-bool has_element(int[] numbers, int element)
-{
-    for (int i = 0; i < n; i++)
-    {
-        if (numbers[i] == element)
-        {
-            return true;
-        }
-    }
-    return false;
-}
+int n = 0;
 
 Console.Write("Введите кол-во элементов в массивах: ");
+n = GlobalClass.GetArraySize();
 
-if (!int.TryParse(Console.ReadLine(), out n))
-{
-    Console.WriteLine("На вход принимаются только int значения и значения не больше чем " + int.MaxValue);
-}
-else if (n < 1)
-{
-    Console.WriteLine("Массив не может быть меньше единицы");
-}
-else is_error = false;
-
-if (is_error)
-{
-    Console.ReadKey();
-    return;
-}
-
-int[] one_numbers = new int[n];
-int[] two_numbers = new int[n];
+int[] f_numbers = new int[n];
+int[] s_numbers = new int[n];
 
 Console.Write("Заполнение первого массива\n");
-
-arr_fill(one_numbers);
+f_numbers = LocalClass.FullArray(f_numbers);
 
 Console.Write("Заполнение второго массива\n");
+s_numbers = LocalClass.FullArray(s_numbers);
 
-arr_fill(two_numbers);
+Array.Sort(f_numbers);
+Array.Sort(s_numbers);
 
-bool is_same = true;
-
-for (int i = 0; i < n; i++)
+if (LocalClass.IsSameArrays(f_numbers, s_numbers))
 {
-    if (!has_element(two_numbers, one_numbers[i]))
-    {
-        Console.Write("Массивы не одинаковые");
-        is_same = false;
-        break;
-    }
+    Console.Write("Массивы одинаковы");
 }
-
-if (is_same)
+else
 {
-    Console.Write("Массивы одинаковые");
+    Console.Write("Массивы разные");
 }
 
 Console.ReadKey();

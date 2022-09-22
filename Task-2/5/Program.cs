@@ -1,37 +1,16 @@
-﻿const int n = 10; //число элементов в массиве
-const int min_value = -1000;
-const int max_value = 1000;
+﻿using GlobalUtils;
+using LocalUtils;
 
-int[] f_numbers = new int[n];
+const int n = 10; //число элементов в массиве
+const int minValue = -1000;
+const int maxValue = 1000;
 
-Random random = new Random(); //объект для генерации
-
+int[] numbers = GlobalClass.GetArray(minValue, maxValue, n);
 Console.Write("Рандомный массив: ");
-
-int size = 0;
-
-for (int i = 0; i < n; i++)
-{
-    f_numbers[i] = random.Next(min_value, max_value); //диапазон генерации от до
-    size += f_numbers[i] > 0 ? 1 : 0; //если ? return true : return false
-    Console.Write(f_numbers[i] + " ");
-}
+GlobalClass.PrintArray(numbers);
 
 Console.Write("\nПоложительный массив: ");
-
-//можно ли было пользоваться встроенным remove или т.п?
-
-int[] s_numbers = new int[size];
-int index = 0;
-
-for (int i = 0; i < n; i++)
-{
-    if (f_numbers[i] > 0)
-    {
-        s_numbers[index] = f_numbers[i];
-        index++;
-        Console.Write(f_numbers[i] + " ");
-    }
-}
+numbers = LocalClass.RemoveNegativeElements(numbers);
+GlobalClass.PrintArray(numbers);
 
 Console.ReadKey();

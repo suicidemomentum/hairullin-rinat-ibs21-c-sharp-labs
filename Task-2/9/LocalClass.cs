@@ -45,12 +45,15 @@ namespace LocalUtils
 
         public static bool IsSameArrays(int[] f_numbers, int[] s_numbers)
         {
-            Array.Sort(f_numbers);
-            Array.Sort(s_numbers);
+            int[] t_f_numbers = (int[])f_numbers.Clone();
+            int[] t_s_numbers = (int[])s_numbers.Clone();
 
-            for (int i = 0; i < f_numbers.Length; i++)
+            Array.Sort(t_f_numbers);
+            Array.Sort(t_s_numbers);
+
+            for (int i = 0; i < t_f_numbers.Length; i++)
             {
-                if (f_numbers[i] != s_numbers[i])
+                if (t_f_numbers[i] != t_s_numbers[i])
                 {
                     return false;
                 }

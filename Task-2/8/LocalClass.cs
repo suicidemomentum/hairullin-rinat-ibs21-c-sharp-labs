@@ -4,6 +4,14 @@ namespace LocalUtils
 {
     public static class LocalClass
     {
+        public static void PrintSearchNumbers(int[] numbers)
+        {
+            Console.Write("¬хождени€ искомого числа: ");
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.Write($"{numbers[i]} ");
+            }
+        }
         public static int GetSearchNumber()
         {
             int findNum;
@@ -20,26 +28,31 @@ namespace LocalUtils
             return findNum;
         }
 
-        public static void PrintSearchNumbers(int findNum, int[] numbers)
+        public static int[] GetIndexesOfSearchNumbers(int findNum, int[] numbers)
         {
-            bool is_num = false;
+            int size = 0;
 
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i] == findNum)
                 {
-                    Console.Write(" " + i);
-                    if (!is_num)
-                    {
-                        is_num = true;
-                    }
+                    size++;
                 }
             }
 
-            if (!is_num)
+            int[] indexes = new int[size];
+            int ind = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.Write(" не найдено");
+                if (numbers[i] == findNum)
+                {
+                    indexes[ind] = i;
+                    ind++;
+                }
             }
+
+            return indexes;
         }
     }
 }

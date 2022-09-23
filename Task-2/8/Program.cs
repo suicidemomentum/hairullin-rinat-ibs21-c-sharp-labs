@@ -15,7 +15,15 @@ GlobalClass.PrintArray(numbers);
 Console.Write("\nВведите искомое число: ");
 int findNum = LocalClass.GetSearchNumber();
 
-Console.Write($"Вхождения числа {findNum}:");
-LocalClass.PrintSearchNumbers(findNum, numbers);
+int[] indexes = LocalClass.GetIndexesOfSearchNumbers(findNum, numbers);
+
+if (indexes.Length == 0)
+{
+    Console.Write($"Нет вхождений числа {findNum}");
+}
+else
+{
+    LocalClass.PrintSearchNumbers(indexes);
+}
 
 Console.ReadKey();

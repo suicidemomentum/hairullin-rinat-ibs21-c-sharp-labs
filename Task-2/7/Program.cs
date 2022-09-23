@@ -1,4 +1,5 @@
 ﻿using GlobalUtils;
+using LocalUtils;
 
 int n = 0;
 
@@ -9,8 +10,7 @@ int[] numbers = new int[n];
 numbers = GlobalClass.FullArray(numbers);
 
 Console.Write("Отсортированный массив: ");
-Array.Sort(numbers);
-Array.Reverse(numbers);
+LocalClass.ReverseSortArray(numbers);
 GlobalClass.PrintArray(numbers);
 
 Console.ReadKey();

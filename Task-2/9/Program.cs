@@ -24,4 +24,7 @@ else
     Console.Write("Массивы разные");
 }
 
+GlobalClass.PrintArray(s_numbers);
+GlobalClass.PrintArray(f_numbers);
+
 Console.ReadKey();

@@ -8,13 +8,13 @@ namespace LocalUtils
         {
             int[,] numbers = new int[a, b];
 
-            Random random = new Random(); //объект для генерации
+            Random random = new Random();
 
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
                 {
-                    numbers[i, j] = random.Next(minValue, maxValue); //диапазон генерации от до
+                    numbers[i, j] = random.Next(minValue, maxValue);
                 }
             }
 

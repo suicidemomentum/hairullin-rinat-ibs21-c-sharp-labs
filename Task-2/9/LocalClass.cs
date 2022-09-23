@@ -45,6 +45,9 @@ namespace LocalUtils
 
         public static bool IsSameArrays(int[] f_numbers, int[] s_numbers)
         {
+            Array.Sort(f_numbers);
+            Array.Sort(s_numbers);
+
             for (int i = 0; i < f_numbers.Length; i++)
             {
                 if (f_numbers[i] != s_numbers[i])

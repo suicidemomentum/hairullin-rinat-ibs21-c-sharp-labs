@@ -17,6 +17,5 @@ Console.Write("\nСортированный массив: ");
 LocalClass.SortMass(numbers);
 GlobalClass.PrintArray(numbers);
 
-Console.Write(numbers[n - 1]);
-Console.Write("\nМаксимальное значение: " + max + ", минимальное значение: " + min);
+Console.Write($"\nМаксимальное значение: {max}, минимальное значение: {min}");
 Console.ReadKey();

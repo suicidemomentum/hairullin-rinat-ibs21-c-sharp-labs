@@ -15,9 +15,6 @@ f_numbers = LocalClass.FullArray(f_numbers);
 Console.Write("Заполнение второго массива\n");
 s_numbers = LocalClass.FullArray(s_numbers);
 
-Array.Sort(f_numbers);
-Array.Sort(s_numbers);
-
 if (LocalClass.IsSameArrays(f_numbers, s_numbers))
 {
     Console.Write("Массивы одинаковы");

@@ -14,8 +14,6 @@ namespace LocalUtils
                 {
                     sum += numbers[i];
                 }
-
-                Console.Write(numbers[i] + " ");
             }
 
             return sum;

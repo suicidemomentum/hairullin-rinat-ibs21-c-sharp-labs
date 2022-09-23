@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj": {}
+    "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj": {
+    "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj",
+        "projectUniqueName": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj",
         "projectName": "8",
-        "projectPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj",
+        "projectPath": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\8.csproj",
         "packagesPath": "C:\\Users\\Octavian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\obj\\",
+        "outputPath": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Octavian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj": {
-                "projectPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj"
+              "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj": {
+                "projectPath": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj": {
+    "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj",
+        "projectUniqueName": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj",
+        "projectPath": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\Utils.csproj",
         "packagesPath": "C:\\Users\\Octavian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\obj\\",
+        "outputPath": "C:\\Users\\Octavian\\Desktop\\Новая папка (2)\\hairullin-rinat-ibs21-c-sharp-labs\\Task-2\\Utils\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Octavian\\AppData\\Roaming\\NuGet\\NuGet.Config",

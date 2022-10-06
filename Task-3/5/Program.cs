@@ -8,6 +8,7 @@ string[] dates = LocalClass.RegexGetDates(s);
 if (dates.Length == 0)
 {
     Console.WriteLine("No dates has been found by regex");
+    return;
 }
 
 string[][] arrayOfArrays = LocalClass.RegexGetDaysMonthsYears(dates);

@@ -4,11 +4,11 @@ using System.Text.RegularExpressions;
 
 namespace LocalUtils
 {
-    internal static class LocalClass
+    internal static class LocalClass //группы доделать все в 1 методе глянуть в отладке объекты
     {
         internal static string[] RegexGetDates(string s)
         {
-            Regex regex = new Regex(@"([0-9]{2}\-[0-9]{2}\-[0-9]{4})");
+            Regex regex = new Regex(@"(([0-9]{2})\-([0-9]{2})\-([0-9]{4}))");
             MatchCollection matches = regex.Matches(s);
 
             string[] dates = new string[matches.Count];

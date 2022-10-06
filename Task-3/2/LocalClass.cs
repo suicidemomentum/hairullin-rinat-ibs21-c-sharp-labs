@@ -1,29 +1,31 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
+using System.Text;
 
 namespace LocalUtils
 {
     internal static class LocalClass
     {
-        internal static string NormalizeString(string s)
+        internal static string NormalizeString(string s) //сделано
         { 
-            return (s.Replace(" ", "")).ToLower();
-        }
+            StringBuilder temp = new StringBuilder();
 
-        internal static bool IsStringPalindrome(string s)
-        {
-            int j = s.Length - 1;
-
-            for (int i = 0; i <= j; i++)
+            for (int i = 0; i < s.Length; i++)
             {
-                if (s[i] != s[j])
+                if (char.IsLetter(s[i]))
                 {
-                    return false;
+                    temp.Append(char.ToLower(s[i]));
                 }
-
-                j--;
             }
 
-            return true;
+            return temp.ToString();
+        }
+
+        internal static bool IsStringPalindrome(string s) //сделано
+        {
+            string rev_s = Strings.StrReverse(s);
+
+            return s.Equals(rev_s);
         }
     }
 }

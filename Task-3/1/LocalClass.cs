@@ -18,11 +18,9 @@ namespace LocalUtils
                 allWordLength += b.Length;
             }
 
-            Console.Write(allWordLength + " " + mas.Length);
-
             if (mas.Length > 0) //need check because we cant divide on zero
             {
-                return allWordLength / mas.Length;
+                return (double)allWordLength / mas.Length;
             }
             else
             {

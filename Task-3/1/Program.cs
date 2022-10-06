@@ -8,5 +8,5 @@ string s = GlobalClass.EnterString();
 string[] mas = LocalClass.GetSplittedString(s);
 double averageLength = LocalClass.GetAverageWordLength(mas);
 
-Console.WriteLine("Average words length: " + averageLength);
+Console.WriteLine($"Average words length: {averageLength}");
 Console.ReadKey();

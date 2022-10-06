@@ -16,7 +16,7 @@ namespace LocalUtils
             return regex.Replace(s, target);
         }
 
-        internal static string NoRegexReplaceTags(string s)
+        internal static string NoRegexReplaceTags(string s) //не работает
         {
             string[] words = s.Split(new char[] { '>', '<' }, StringSplitOptions.RemoveEmptyEntries);
 

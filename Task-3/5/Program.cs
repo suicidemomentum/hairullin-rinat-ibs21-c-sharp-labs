@@ -11,5 +11,4 @@ if (dates.Length == 0)
     return;
 }
 
-string[][] arrayOfArrays = LocalClass.RegexGetDaysMonthsYears(dates);
-LocalClass.PrintDaysMonthsYears(arrayOfArrays);
+LocalClass.PrintDatesInfo(dates);

@@ -16,21 +16,26 @@ namespace LocalUtils
             return regex.Replace(s, target);
         }
 
-        internal static string NoRegexReplaceTags(string s) //не работает
+        internal static string NoRegexReplaceTags(string s)
         {
-            string[] words = s.Split(new char[] { '>', '<' }, StringSplitOptions.RemoveEmptyEntries);
-
-            string result = "";
-
-            for (int i = 0; i < words.Length; i++)
+            while (true)
             {
-                if (i % 2 == 1)
+                int indexOne = s.IndexOf("<");
+                int indexTwo = s.IndexOf(">");
+                if (indexOne == -1 || indexTwo == -1)
                 {
-                    result += "_" + words[i];
+                    break;
                 }
+
+                string temp_s = "";
+
+                s = s.Insert(indexTwo + 1, "_");
+                temp_s = s.Substring(0, indexOne);
+                s = s.Substring(indexTwo + 1, s.Length - indexTwo - 1);
+                s = temp_s + s;
             }
 
-            return result;
+            return s;
         }
     }
 }

@@ -6,7 +6,7 @@ namespace LocalUtils
 {
     internal static class LocalClass
     {
-        internal static string NormalizeString(string s) //сделано
+        internal static string NormalizeString(string s)
         { 
             StringBuilder temp = new StringBuilder();
 
@@ -21,7 +21,7 @@ namespace LocalUtils
             return temp.ToString();
         }
 
-        internal static bool IsStringPalindrome(string s) //сделано
+        internal static bool IsStringPalindrome(string s)
         {
             string rev_s = Strings.StrReverse(s);
 

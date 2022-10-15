@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/4/4.csproj": {}
+    "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\4\\4.csproj": {}
   },
   "projects": {
-    "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/4/4.csproj": {
+    "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\4\\4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/4/4.csproj",
+        "projectUniqueName": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\4\\4.csproj",
         "projectName": "4",
-        "projectPath": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/4/4.csproj",
-        "packagesPath": "/Users/august/.nuget/packages/",
-        "outputPath": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/4/obj/",
+        "projectPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\4\\4.csproj",
+        "packagesPath": "C:\\Users\\Octavian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/august/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Octavian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/Utils/Utils.csproj": {
-                "projectPath": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/Utils/Utils.csproj"
+              "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\Utils\\Utils.csproj": {
+                "projectPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\Utils\\Utils.csproj"
               }
             }
           }
@@ -57,26 +59,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/Utils/Utils.csproj": {
+    "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/Utils/Utils.csproj",
+        "projectUniqueName": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/Utils/Utils.csproj",
-        "packagesPath": "/Users/august/.nuget/packages/",
-        "outputPath": "/Users/august/Projects/hairullin-rinat-ibs21-c-sharp-labs/Task-3/Utils/obj/",
+        "projectPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\Octavian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Octavian\\Desktop\\hairullin-rinat-ibs21-c-sharp-labs\\Task-3\\Utils\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/august/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Octavian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -110,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

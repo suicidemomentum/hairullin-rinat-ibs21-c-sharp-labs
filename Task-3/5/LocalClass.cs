@@ -8,7 +8,9 @@ namespace LocalUtils
     {
         internal static string[] RegexGetDates(string s) //change regex
         {
-            Regex regex = new Regex(@"((?<d>[0-9]{2})\-(?<m>[0-9]{2})\-(?<y>[0-9]{4}))");
+            string pattern = @"(?<d>0[1-9]|[1-2][0-9]|3[0-1])-(?<m>0[1-9]|1[0-2])-" +
+                            @"(?<y>[0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]|[0-9][1-9][0-9]{2}|[1-9][0-9]{3})";
+            Regex regex = new Regex(pattern);
             MatchCollection matches = regex.Matches(s);
 
             string[] dates = new string[matches.Count];

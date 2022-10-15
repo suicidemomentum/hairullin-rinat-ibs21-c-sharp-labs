@@ -12,3 +12,5 @@ else
 {
     Console.WriteLine($"Entered string {s} is not email format");
 }
+
+Console.ReadKey();

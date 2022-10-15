@@ -6,7 +6,7 @@ namespace LocalUtils
 {
     internal static class LocalClass
     {
-        internal static string[] RegexGetDates(string s)
+        internal static string[] RegexGetDates(string s) //change regex
         {
             Regex regex = new Regex(@"((?<d>[0-9]{2})\-(?<m>[0-9]{2})\-(?<y>[0-9]{4}))");
             MatchCollection matches = regex.Matches(s);

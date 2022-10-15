@@ -9,3 +9,5 @@ Console.WriteLine($"Result from no regex: {b}");
 
 s = LocalClass.RegexReplaceTags(s);
 Console.WriteLine($"Result from regex: {s}");
+
+Console.ReadKey();

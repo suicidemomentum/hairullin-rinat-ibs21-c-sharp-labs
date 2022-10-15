@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -18,24 +19,24 @@ namespace LocalUtils
 
         internal static string NoRegexReplaceTags(string s)
         {
+            StringBuilder builder_s = new StringBuilder(s);
+            int index = 0;
+
             while (true)
             {
-                int indexOne = s.IndexOf("<");
-                int indexTwo = s.IndexOf(">");
+                int indexOne = s.IndexOf("<", index);
+                int indexTwo = s.IndexOf(">", index);
                 if (indexOne == -1 || indexTwo == -1)
                 {
                     break;
                 }
 
-                string temp_s = "";
-
-                s = s.Insert(indexTwo + 1, "_");
-                temp_s = s.Substring(0, indexOne);
-                s = s.Substring(indexTwo + 1, s.Length - indexTwo - 1);
-                s = temp_s + s;
+                builder_s.Insert(indexTwo + 1, "_");
+                builder_s.Remove(indexOne, indexTwo - indexOne + 1);
+                index = indexOne;
             }
 
-            return s;
+            return builder_s.ToString();
         }
     }
 }

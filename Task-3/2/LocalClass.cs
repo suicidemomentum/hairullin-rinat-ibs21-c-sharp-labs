@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
+﻿using System;
 using System.Text;
 
 namespace LocalUtils
@@ -23,9 +22,14 @@ namespace LocalUtils
 
         internal static bool IsStringPalindrome(string s)
         {
-            string rev_s = Strings.StrReverse(s);
+            StringBuilder temp = new StringBuilder();
 
-            return s.Equals(rev_s);
+            for (int i = s.Length - 1; i > -1; i--)
+            {
+                temp.Append(s[i]);
+            }
+
+            return s.Equals(temp.ToString());
         }
     }
 }

@@ -14,3 +14,5 @@ else
 {
     Console.WriteLine("Entered string is not a palindrome");
 }
+
+Console.ReadKey();

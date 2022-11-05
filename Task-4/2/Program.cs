@@ -1,11 +1,5 @@
 ﻿using DynamicArrayClass;
 
-void DisplayMessage(Object obj, DynamicArrayEventArgs e)
-{
-    Console.WriteLine($"Old capacity: {e.OldCapacity}");
-    Console.WriteLine($"New capacity: {e.NewCapacity}");
-}
-
 DynamicArray<int> obj1 = new(12);
 obj1.Notify += DisplayMessage;
 obj1.PrintArray();
@@ -46,4 +40,10 @@ bool TestFunc(int s, int b)
 {
     if (s != b) return true;
     return false;
+}
+
+void DisplayMessage(Object obj, DynamicArrayEventArgs e)
+{
+    Console.WriteLine($"Old capacity: {e.OldCapacity}");
+    Console.WriteLine($"New capacity: {e.NewCapacity}");
 }

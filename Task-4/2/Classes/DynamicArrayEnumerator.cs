@@ -41,7 +41,9 @@ namespace DynamicArrayClass
                 return true;
             }
             else
+            {
                 return false;
+            }
         }
 
         public void Reset() => _position = -1;
@@ -49,7 +51,9 @@ namespace DynamicArrayClass
         private Type CurrentRealization()
         {
             if (_position == -1 || _position >= _length)
-                throw new ArgumentOutOfRangeException();
+            {
+                throw new ArgumentOutOfRangeException("Error in Enumerator");
+            }
             return _array[_position];
         }
     }

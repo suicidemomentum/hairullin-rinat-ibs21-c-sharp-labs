@@ -1,4 +1,4 @@
-﻿class DynamicArrayEventArgs
+﻿class DynamicArrayEventArgs : EventArgs
 {
     public int OldCapacity { get; }
     public int NewCapacity { get; }

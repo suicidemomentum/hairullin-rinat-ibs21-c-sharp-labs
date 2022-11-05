@@ -11,7 +11,6 @@ namespace DynamicArrayClass
 
         private Type[] _array;
         private int _length;
-        private int _capacity;
 
         IEnumerator IEnumerable.GetEnumerator()
         {
@@ -49,10 +48,7 @@ namespace DynamicArrayClass
 
             foreach (var item in collection)
             {
-                if (!item.Equals(default(Type)))
-                {
-                    length++;
-                }
+                length++;
             }
 
             return length;
@@ -62,20 +58,14 @@ namespace DynamicArrayClass
         {
             foreach (var item in collection)
             {
-                if (!item.Equals(default(Type)))
-                {
-                    _array[index] = item;
-                    index++;
-                }
+                _array[index] = item;
+                index++;
             }
         }
 
         public void Add(Type element)
         {
-            if (Length >= Capacity)
-            {
-                ResizeArray(Capacity * 2);
-            }
+            ResizeArray(Capacity * 2);
 
             _array[Length] = element;
             Length++;
@@ -83,8 +73,11 @@ namespace DynamicArrayClass
 
         public void ResizeArray(int capacity)
         {
-            Notify?.Invoke(this, new DynamicArrayEventArgs(Capacity, capacity));
-            Array.Resize(ref _array, capacity);
+            if (Length >= Capacity)
+            {
+                Notify?.Invoke(this, new DynamicArrayEventArgs(Capacity, capacity));
+                Array.Resize(ref _array, capacity);
+            }
         }
 
         public void AddRange(IEnumerable<Type> collection)
@@ -93,10 +86,7 @@ namespace DynamicArrayClass
             int tempLength = Length;
             Length += length;
 
-            if (Length > Capacity)
-            {
-                ResizeArray(Length);
-            }
+            ResizeArray(Length);
 
             CopyCollectionToArray(collection, tempLength);
         }
@@ -138,13 +128,10 @@ namespace DynamicArrayClass
 
         public void Insert(Type element, int index)
         {
-            if (index >= Length)
-            {
-                throw new ArgumentOutOfRangeException($"Index {index} doesn`t exist in this collection!");
-            }
+            CheckIndex(index);
 
             Length++;
-            ResizeArray(Capacity + 1);
+            ResizeArray(Length);
 
             for (int i = Length - 1; i != index; i--)
             {
@@ -197,12 +184,23 @@ namespace DynamicArrayClass
 
         public override bool Equals(object? obj)
         {
-            if (Length != (obj as DynamicArray<Type>).Length)
+            if (obj is not DynamicArray<Type>)
+            {
                 return false;
+            }
+
+            var value = obj as DynamicArray<Type>;
+
+            if (Length != value?.Length)
+            {
+                return false;
+            }
             for (int i = 0; i < Length; i++)
             {
-                if (!_array[i].Equals((obj as DynamicArray<Type>)[i]))
+                if (!_array[i].Equals((value)[i]))
+                {
                     return false;
+                }
             }
             return true;
         }
@@ -235,7 +233,10 @@ namespace DynamicArrayClass
 
         protected virtual void Dispose(bool disposing)
         {
-            if (_disposed) return;
+            if (_disposed)
+            {
+                return;
+            }
             if (disposing)
             {
                 foreach (var item in _array)
@@ -249,7 +250,6 @@ namespace DynamicArrayClass
                 Array.Clear(_array);
                 Length = 0;
             }
-            // освобождаем неуправляемые объекты
             _disposed = true;
         }
 

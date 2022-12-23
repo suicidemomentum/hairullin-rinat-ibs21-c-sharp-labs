@@ -1,5 +1,5 @@
 **.DS_Store
 **.vs
-**obj
-**bin
-**TestResults
+**/obj
+**/bin
+**/TestResults
